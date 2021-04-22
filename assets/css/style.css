@@ -1,0 +1,586 @@
+@import 'font/flaticon.css';
+
+.flex-main-wrap {
+    display: flex;
+
+}
+
+.icons::before {
+    margin-left: 0;
+}
+
+.flex-main-wrap .side-bar {
+    height: 100vh;
+    width: 200px;
+    border-right: 1px solid #e8e9e9;
+    padding: 2rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-main-wrap .content-section {
+    flex-grow: 1;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: #f9fdfc;
+}
+
+.side-bar .logo-sidebar {
+    width: 8rem;
+}
+
+.side-bar .nav-link {
+    font-size: 0.8rem;
+    color: #707070;
+    padding: 0.55rem 2rem;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+}
+
+.side-bar .logo-wrap {
+    padding: 0 1.5rem;
+}
+
+.side-bar .nav-wrap .nav-item {
+    margin-bottom: 1rem;
+}
+
+.side-bar .nav-link.active {
+    background-color: #edf9f9;
+}
+
+.side-bar .nav-link .nav-icon::before {
+    margin-right: 0.9rem;
+    font-size: 0.9rem;
+}
+
+.side-bar .nav-link.active .nav-icon::before {
+    color: #01a6ab;
+}
+
+.side-bar .nav-wrap {
+    margin-top: 3rem;
+}
+
+.side-bar .nav-link .user-icon-sm {
+    width: 1rem;
+    margin-right: 0.9rem;
+}
+
+.side-bar .nav-wrap-bottom .nav-item {
+    margin-bottom: 0rem !important;
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem 2rem;
+    border-bottom: 1px solid #e8e9e9;
+    background-color: #ffff;
+}
+
+.content-header .search-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.search-wrap .btn i::before {
+    font-size: 1.1rem;
+    color: #707070;
+}
+
+.no-shadow:focus {
+    box-shadow: none;
+}
+
+.search-wrap input {
+    border: none;
+}
+
+.content-header .nav-link {
+    color: #707070;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+}
+
+.content-header .nav-link i::before {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+.greeting-wrap {
+    color: #707070;
+    margin-top: 2.5rem;
+}
+
+.greeting-wrap .title {
+    font-size: 1.7rem;
+}
+
+.greeting-wrap .desc {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+.dashboard-box {
+    display: flex;
+    align-items: center;
+    padding: 2.5rem 2.2rem;
+    /* max-width: 425px; */
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+    margin-top: 3rem;
+}
+
+.dashboard-box .icon-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 57px;
+    border-radius: 1rem;
+    margin-right: 1.8rem;
+}
+
+.dashboard-box .content {
+    color: #837070;
+    font-size: 1.3rem;
+}
+
+.dashboard-box .icon-wrap .box-icon::before {
+    font-size: 1.7rem;
+}
+
+.favourite-box {
+    background-color: #bed9ff;
+}
+
+.favourite-box .icon-wrap {
+    background-color: #99bef1;
+}
+
+.favourite-box .box-icon::before {
+    color: #064fb8;
+}
+
+.views-box {
+    background-color: #ffdfd1;
+}
+
+.views-box .icon-wrap {
+    background-color: #ecc0ac;
+}
+
+.views-box .box-icon::before {
+    color: #a2411a;
+}
+
+.clicks-box {
+    background-color: #c6f4f5;
+}
+
+.clicks-box .icon-wrap {
+    background-color: #9fe4e6;
+}
+
+.clicks-box .box-icon::before {
+    color: #01a6ab;
+}
+
+.training-box {
+    background-color: #e6d9ff;
+}
+
+.training-box .icon-wrap {
+    background-color: #c8b8e8;
+}
+
+.training-box .box-icon::before {
+    color: #50348a;
+}
+
+.segment-head {
+    color: #707070;
+    font-size: 1.1rem;
+    border-bottom: 2px solid #e9ebea;
+    padding-bottom: 0.7rem;
+    margin: 3rem 0 2rem 0;
+}
+
+.x-padd-dashboard {
+    padding: 0 5.5rem 0 4.5rem !important;
+}
+
+.dashboard-img-wrap {
+    height: 240px;
+    border-radius: 0.5rem;
+}
+
+.dashboard-img-wrap img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    border-radius: 0.5rem;
+}
+
+.profile-option {
+    /* display: none; */
+    position: absolute;
+    width: 250px;
+    /* right: -13px; */
+    bottom: 35px;
+    border-radius: 1rem;
+    box-shadow: 3px 2px 16px #bebebe;
+    display: none;
+    z-index: 9999;
+    background-color: #ffffff;
+}
+
+.profile-option .top-section {
+    padding: 1.3rem;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    background-color: #f9f9f9;
+}
+
+.user-info-wrap {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-option .user-image .user-icon {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin-right: 0.7rem;
+}
+
+.username-wrap .name {
+    font-size: 0.9rem;
+    color: #897d79;
+    margin-bottom: 3px;
+}
+
+.username-wrap .desc {
+    font-size: 0.6rem;
+    color: #838383;
+}
+
+.profile-option .bottom-section {
+    padding: 1rem 0;
+}
+
+.bottom-section .nav-item {
+    padding: 0.5rem 0;
+}
+
+.bottom-section .nav-link {
+    padding: .2rem 0.3rem;
+}
+
+.dropdown-icons::before {
+    font-size: 1rem;
+    color: #c4c4c4;
+    margin: 0 1rem;
+    font-weight: 500;
+}
+
+.drop-items {
+    flex-direction: column;
+}
+
+.drop-items .text,
+.text-logout {
+    color: #9a7d92;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.drop-items .desc {
+    font-size: 0.7rem;
+    color: #bebebe;
+}
+
+.show {
+    display: block !important;
+}
+
+.settings-pill {
+    margin-top: 3rem;
+}
+
+.settings-pill .nav-link {
+    background-color: #e7eae9;
+    color: #827382;
+    font-size: 0.9rem;
+    border-radius: 0;
+    padding: .5rem 2.7rem;
+}
+
+.settings-pill .nav-item:nth-child(1) .nav-link {
+    border-radius: 0.2rem 0 0 0.2rem;
+}
+
+.settings-pill .nav-item:nth-child(2) .nav-link {
+    border-radius: 0 0.2rem 0.2rem 0;
+}
+
+.settings-pill .nav-link.active {
+    background-color: #01a6ab;
+    color: #ffff;
+}
+
+.setting-item {
+    max-width: 65%;
+}
+
+.form-title {
+    font-size: 1rem;
+    font-weight: 500;
+    border-bottom: 1px solid #eff6f9;
+    padding-bottom: 0.7rem;
+}
+
+.setting-item label {
+    font-size: 0.8rem;
+}
+
+.setting-item .account-form {
+    border: 1px solid #000;
+    border-radius: 0.6rem;
+    background-color: transparent;
+    padding: 0.5rem 0.7rem;
+}
+
+.upload-wrap {
+    display: flex;
+    margin-right: 1.2rem;
+}
+
+.upload-wrap .upload-btn {
+    display: flex;
+    align-items: center;
+    background-color: #bdbfbf;
+    color: #fff;
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+    padding: 0.1rem 0rem 0.1rem 0.7rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.upload-btn .text {
+    color: #ffff;
+    margin-right: 0.8rem;
+    font-size: 0.7rem;
+}
+
+.upload-wrap .upload-btn .icon-wrap {
+    transform: rotate(180deg);
+    background-color: transparent;
+    margin-right: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 50%;
+}
+
+.upload-wrap .upload-btn .icon-wrap .upload-icon::before {
+    font-size: 0.6rem;
+    color: #fff;
+}
+
+.upload-btn input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.user-image-prev {
+    margin-right: 1rem;
+}
+
+.user-image-prev .user-image-icon {
+    width: 4rem;
+    color: #bababa;
+}
+
+.btn-save {
+    background-color: #01a6ab;
+    color: #ffff;
+    font-size: 0.7rem;
+    padding: .375rem 1.35rem;
+}
+
+.add-team-left .create-box {
+    border-radius: 0.4rem;
+    padding: 2.5rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 240px;
+    background-color: #ccedee;
+    min-width: 215px;
+    margin-bottom: 0;
+    border: 2px solid #3ababd;
+}
+
+.add-team-left .create-box .create-icn::before {
+    color: #01a6ab;
+    font-size: 3.5rem;
+}
+
+.shared-campaigns-wrap {
+    flex-grow: 1;
+    /* padding: 1rem 1rem;
+    border-left: 1px solid #000; */
+    margin-left: 3rem;
+    height: calc(100vh - 250px);
+}
+
+.teams-added-box {
+    background-color: #e7eae9;
+    display: flex;
+    padding: 0.9rem 2rem 0.9rem 1rem;
+    border-radius: 0.3rem;
+    max-width: 700px;
+}
+
+.team-name-icon,
+.team-role-tool,
+.role-section,
+.desc-imgs {
+    display: flex;
+    align-items: center;
+}
+
+.team-name-icon {
+    flex-grow: 1;
+}
+
+.teams-added-box .team-name-icon img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.team-name-icon .title {
+    font-size: 0.9rem;
+    color: #000;
+    margin-left: 3rem;
+}
+
+.role-section {
+    width: 200px;
+}
+
+.role-section .user-role {
+    margin-right: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.desc-imgs img {
+    width: 1.2rem;
+    margin-right: -5px;
+}
+
+.team-role-tool .tools {
+    margin-left: 1rem;
+}
+
+.tools .nav-link {
+    color: #000000;
+    padding: 0;
+    margin-right: 0.5rem;
+}
+
+.tools .nav-link i::before {
+    font-size: 0.8rem;
+}
+
+.agency-label-box {
+    margin-top: 2rem;
+    max-width: 248px;
+}
+
+.agency-label-box .label-box {
+    background-color: #e8f7f6;
+    color: #01a6ab;
+    border: 1px solid #9eddde;
+    padding: 0 3rem 0 4rem;
+    height: 190px;
+    max-height: 185px;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.agency-label-box button {
+    font-size: 0.8rem;
+    padding: 0.7rem 0.75rem;
+    background-color: #e8f7f6;
+    color: #01a6ab;
+    border: 1px solid #01a6ab;
+}
+
+.btn-agency {}
+
+.modal-inner {
+    display: flex;
+    /* align-items: center; */
+}
+
+.modal-inner .left-section {
+    width: 50%;
+    min-height: 70vh;
+    background-color: #01a6ab;
+}
+
+.modal-inner .right-section {
+    width: 50%;
+    min-height: 70vh;
+    padding: 3rem 3rem 3rem 2.5rem;
+}
+
+.add-team-form .title {
+    font-size: 0.6rem;
+    color: #707070;
+    margin-bottom: 1rem;
+}
+
+.add-team-form .form-control {
+    background-color: #f5f5f5;
+    font-size: 0.8rem;
+    height: calc(1.5em + .75rem + 15px);
+    padding: 0.35rem 1.35rem;
+    border: none;
+}
+
+.bottom-btn-wrap {
+    margin-top: 4rem;
+}
+
+.bottom-btn-wrap .btn-save, .bottom-btn-wrap .btn-cancel {
+    color: #000;
+    padding: 0.3rem 1.7rem;
+    font-size: 0.8rem;
+}
+
+.bottom-btn-wrap .btn-save {
+    background-color: #f0f9f9;
+}

@@ -1,0 +1,173 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?2f3545eeb1d85fb5bf1504b1be4c73f8") format("truetype"),
+url("./flaticon.woff?2f3545eeb1d85fb5bf1504b1be4c73f8") format("woff"),
+url("./flaticon.woff2?2f3545eeb1d85fb5bf1504b1be4c73f8") format("woff2"),
+url("./flaticon.eot?2f3545eeb1d85fb5bf1504b1be4c73f8#iefix") format("embedded-opentype"),
+url("./flaticon.svg?2f3545eeb1d85fb5bf1504b1be4c73f8#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "ab-testing": "\f101",
+    "add": "\f102",
+    "atoms-1": "\f103",
+    "atoms": "\f104",
+    "black-graduation-cap-tool-of-university-student-for-head": "\f105",
+    "briefcase": "\f106",
+    "bug": "\f107",
+    "building": "\f108",
+    "copy": "\f109",
+    "dashboard": "\f10a",
+    "down-arrow": "\f10b",
+    "download": "\f10c",
+    "drop-down-arrow": "\f10d",
+    "eye": "\f10e",
+    "gift-card": "\f10f",
+    "information": "\f110",
+    "link": "\f111",
+    "logout": "\f112",
+    "man-user": "\f113",
+    "mortarboard": "\f114",
+    "mountain-range-on-black-background": "\f115",
+    "notification": "\f116",
+    "pencil": "\f117",
+    "plus": "\f118",
+    "profile-user": "\f119",
+    "question": "\f11a",
+    "right-arrow": "\f11b",
+    "scroll": "\f11c",
+    "search": "\f11d",
+    "settings": "\f11e",
+    "share": "\f11f",
+    "star": "\f120",
+    "tap": "\f121",
+    "trash-bin": "\f122",
+    "trash": "\f123",
+    "up-chevron": "\f124",
+    "visibility": "\f125",
+);
+
+.flaticon-ab-testing:before {
+    content: map-get($flaticon-map, "ab-testing");
+}
+.flaticon-add:before {
+    content: map-get($flaticon-map, "add");
+}
+.flaticon-atoms-1:before {
+    content: map-get($flaticon-map, "atoms-1");
+}
+.flaticon-atoms:before {
+    content: map-get($flaticon-map, "atoms");
+}
+.flaticon-black-graduation-cap-tool-of-university-student-for-head:before {
+    content: map-get($flaticon-map, "black-graduation-cap-tool-of-university-student-for-head");
+}
+.flaticon-briefcase:before {
+    content: map-get($flaticon-map, "briefcase");
+}
+.flaticon-bug:before {
+    content: map-get($flaticon-map, "bug");
+}
+.flaticon-building:before {
+    content: map-get($flaticon-map, "building");
+}
+.flaticon-copy:before {
+    content: map-get($flaticon-map, "copy");
+}
+.flaticon-dashboard:before {
+    content: map-get($flaticon-map, "dashboard");
+}
+.flaticon-down-arrow:before {
+    content: map-get($flaticon-map, "down-arrow");
+}
+.flaticon-download:before {
+    content: map-get($flaticon-map, "download");
+}
+.flaticon-drop-down-arrow:before {
+    content: map-get($flaticon-map, "drop-down-arrow");
+}
+.flaticon-eye:before {
+    content: map-get($flaticon-map, "eye");
+}
+.flaticon-gift-card:before {
+    content: map-get($flaticon-map, "gift-card");
+}
+.flaticon-information:before {
+    content: map-get($flaticon-map, "information");
+}
+.flaticon-link:before {
+    content: map-get($flaticon-map, "link");
+}
+.flaticon-logout:before {
+    content: map-get($flaticon-map, "logout");
+}
+.flaticon-man-user:before {
+    content: map-get($flaticon-map, "man-user");
+}
+.flaticon-mortarboard:before {
+    content: map-get($flaticon-map, "mortarboard");
+}
+.flaticon-mountain-range-on-black-background:before {
+    content: map-get($flaticon-map, "mountain-range-on-black-background");
+}
+.flaticon-notification:before {
+    content: map-get($flaticon-map, "notification");
+}
+.flaticon-pencil:before {
+    content: map-get($flaticon-map, "pencil");
+}
+.flaticon-plus:before {
+    content: map-get($flaticon-map, "plus");
+}
+.flaticon-profile-user:before {
+    content: map-get($flaticon-map, "profile-user");
+}
+.flaticon-question:before {
+    content: map-get($flaticon-map, "question");
+}
+.flaticon-right-arrow:before {
+    content: map-get($flaticon-map, "right-arrow");
+}
+.flaticon-scroll:before {
+    content: map-get($flaticon-map, "scroll");
+}
+.flaticon-search:before {
+    content: map-get($flaticon-map, "search");
+}
+.flaticon-settings:before {
+    content: map-get($flaticon-map, "settings");
+}
+.flaticon-share:before {
+    content: map-get($flaticon-map, "share");
+}
+.flaticon-star:before {
+    content: map-get($flaticon-map, "star");
+}
+.flaticon-tap:before {
+    content: map-get($flaticon-map, "tap");
+}
+.flaticon-trash-bin:before {
+    content: map-get($flaticon-map, "trash-bin");
+}
+.flaticon-trash:before {
+    content: map-get($flaticon-map, "trash");
+}
+.flaticon-up-chevron:before {
+    content: map-get($flaticon-map, "up-chevron");
+}
+.flaticon-visibility:before {
+    content: map-get($flaticon-map, "visibility");
+}
