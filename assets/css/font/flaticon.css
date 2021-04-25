@@ -1,10 +1,10 @@
 @font-face {
     font-family: "flaticon";
-    src: url("./flaticon.ttf?2f3545eeb1d85fb5bf1504b1be4c73f8") format("truetype"),
-url("./flaticon.woff?2f3545eeb1d85fb5bf1504b1be4c73f8") format("woff"),
-url("./flaticon.woff2?2f3545eeb1d85fb5bf1504b1be4c73f8") format("woff2"),
-url("./flaticon.eot?2f3545eeb1d85fb5bf1504b1be4c73f8#iefix") format("embedded-opentype"),
-url("./flaticon.svg?2f3545eeb1d85fb5bf1504b1be4c73f8#flaticon") format("svg");
+    src: url("./flaticon.ttf?c8c9fe4893da1f1a2724fcf2cb3b34c2") format("truetype"),
+url("./flaticon.woff?c8c9fe4893da1f1a2724fcf2cb3b34c2") format("woff"),
+url("./flaticon.woff2?c8c9fe4893da1f1a2724fcf2cb3b34c2") format("woff2"),
+url("./flaticon.eot?c8c9fe4893da1f1a2724fcf2cb3b34c2#iefix") format("embedded-opentype"),
+url("./flaticon.svg?c8c9fe4893da1f1a2724fcf2cb3b34c2#flaticon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -18,114 +18,126 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.flaticon-ab-testing:before {
+.flaticon-dashboard:before {
     content: "\f101";
 }
-.flaticon-add:before {
+.flaticon-search:before {
     content: "\f102";
 }
-.flaticon-atoms-1:before {
+.flaticon-information:before {
     content: "\f103";
 }
-.flaticon-atoms:before {
+.flaticon-settings:before {
     content: "\f104";
 }
-.flaticon-black-graduation-cap-tool-of-university-student-for-head:before {
+.flaticon-notification:before {
     content: "\f105";
 }
-.flaticon-briefcase:before {
+.flaticon-man-user:before {
     content: "\f106";
 }
-.flaticon-bug:before {
+.flaticon-question:before {
     content: "\f107";
 }
-.flaticon-building:before {
+.flaticon-drop-down-arrow:before {
     content: "\f108";
 }
-.flaticon-copy:before {
+.flaticon-pencil:before {
     content: "\f109";
 }
-.flaticon-dashboard:before {
+.flaticon-trash-bin:before {
     content: "\f10a";
 }
-.flaticon-down-arrow:before {
+.flaticon-copy:before {
     content: "\f10b";
 }
-.flaticon-download:before {
+.flaticon-right-arrow:before {
     content: "\f10c";
 }
-.flaticon-drop-down-arrow:before {
+.flaticon-up-chevron:before {
     content: "\f10d";
 }
-.flaticon-eye:before {
+.flaticon-add:before {
     content: "\f10e";
 }
-.flaticon-gift-card:before {
+.flaticon-scroll:before {
     content: "\f10f";
 }
-.flaticon-information:before {
+.flaticon-ab-testing:before {
     content: "\f110";
 }
-.flaticon-link:before {
+.flaticon-atoms:before {
     content: "\f111";
 }
-.flaticon-logout:before {
+.flaticon-atoms-1:before {
     content: "\f112";
 }
-.flaticon-man-user:before {
+.flaticon-mountain-range-on-black-background:before {
     content: "\f113";
 }
-.flaticon-mortarboard:before {
+.flaticon-gift-card:before {
     content: "\f114";
 }
-.flaticon-mountain-range-on-black-background:before {
+.flaticon-briefcase:before {
     content: "\f115";
 }
-.flaticon-notification:before {
+.flaticon-star:before {
     content: "\f116";
 }
-.flaticon-pencil:before {
+.flaticon-eye:before {
     content: "\f117";
 }
-.flaticon-plus:before {
+.flaticon-visibility:before {
     content: "\f118";
 }
-.flaticon-profile-user:before {
+.flaticon-tap:before {
     content: "\f119";
 }
-.flaticon-question:before {
+.flaticon-black-graduation-cap-tool-of-university-student-for-head:before {
     content: "\f11a";
 }
-.flaticon-right-arrow:before {
+.flaticon-trash:before {
     content: "\f11b";
 }
-.flaticon-scroll:before {
+.flaticon-bug:before {
     content: "\f11c";
 }
-.flaticon-search:before {
+.flaticon-plus:before {
     content: "\f11d";
 }
-.flaticon-settings:before {
+.flaticon-profile-user:before {
     content: "\f11e";
 }
-.flaticon-share:before {
+.flaticon-download:before {
     content: "\f11f";
 }
-.flaticon-star:before {
+.flaticon-building:before {
     content: "\f120";
 }
-.flaticon-tap:before {
+.flaticon-mortarboard:before {
     content: "\f121";
 }
-.flaticon-trash-bin:before {
+.flaticon-logout:before {
     content: "\f122";
 }
-.flaticon-trash:before {
+.flaticon-share:before {
     content: "\f123";
 }
-.flaticon-up-chevron:before {
+.flaticon-down-arrow:before {
     content: "\f124";
 }
-.flaticon-visibility:before {
+.flaticon-link:before {
     content: "\f125";
+}
+.flaticon-edit:before {
+    content: "\f126";
+}
+.flaticon-delete:before {
+    content: "\f127";
+}
+.flaticon-more-options:before {
+    content: "\f128";
+}
+.flaticon-add-1:before {
+    content: "\f129";
 }
