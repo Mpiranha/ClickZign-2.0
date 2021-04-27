@@ -212,7 +212,7 @@
                 <div class="container px-5">
 
                     <div class="row mt-5">
-                        <div data-toggle="modal" data-target="#add-test-modal" class="saved-project-box"
+                        <div data-toggle="modal" data-target="#show-info-modal" class="saved-project-box"
                             data-target=".slide-in-wrap">
                             <i class="flaticon-information icons info-icn"></i>
                         </div>
@@ -228,7 +228,7 @@
         </div>
     </div>
 
-    <div class="modal fade bd-example-modal-lg show" id="show-info-modal" tabindex="-1" role="dialog"
+    <div class="modal fade bd-example-modal-lg" id="show-info-modal" tabindex="-1" role="dialog"
         aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
@@ -269,52 +269,61 @@
                     </div>
                     <div class="right-section">
                         <div class="tab-content" id="v-pills-tabContent">
-                            <div class="tab-pane fade show active" id="v-pills-facebook" role="tabpanel"
+                            <div class="tab-pane active" id="v-pills-facebook" role="tabpanel"
                                 aria-labelledby="v-pills-facebook-tab">
                                 <h6 class="tab-title">Preview</h6>
-                                <div class="vid-preview">
-                                    <iframe src="https://facebook.com">
+                                <div class="test-preview">
+                                    <iframe src="http://netnaija.com">
                                     </iframe>
                                 </div>
                                 <ul class="nav preview-stat">
                                     <li class="nav-item">
-                                        <span class="flaticon-visibility icons head-icon"></span>
+                                        <i class="flaticon-visibility icons head-icon"></i>
                                         View: 20
                                     </li>
                                     <li class="nav-item">
-                                        <span class="flaticon-tap icons head-icon"></span>
+                                        <i class="flaticon-tap icons head-icon"></i>
                                         Clicks: 30
                                     </li>
                                     <li class="nav-item">
-                                        <span class="flaticon-statistics icons head-icon"></span>
+                                        <i class="flaticon-star icons head-icon"></i>
                                         CTR: 30%
                                     </li>
                                 </ul>
-                                <hr>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <button class="btn btn-cancel">Cancel</button>
-                                    </div>
+                                <hr style="border-top: 1px solid #797979; margin: 1rem 0;">
+                                <div class="d-flex justify-content-end align-items-center mt-4">
                                     <ul class="nav preview-action">
                                         <li class="nav-item edit-banner">
-                                            <span class="flaticon-edit-1 icons head-icon"></span>
-                                            Edit
-                                        </li>
-                                        <li class="nav-item">
-                                            <span class="flaticon-share icons head-icon"></span>
-                                            Share
+                                            <a class="nav-link p-0" href="#">
+                                                <i class="flaticon-edit icons head-icon"></i>
+                                                Edit
+                                            </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link p-0" href="#">
-                                                <span class="flaticon-download icons head-icon"></span>
+                                                <i class="flaticon-share icons head-icon"></i>
+                                                Share
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link p-0" href="#">
+                                                <i class="flaticon-download icons head-icon"></i>
                                                 Download
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <span class="flaticon-delete icons head-icon"></span>
-                                            Trash
+                                            <a class="nav-link p-0 text-danger" href="#">
+                                                <i class="flaticon-delete icons head-icon"></i>
+                                                Delete
+                                            </a>
                                         </li>
                                     </ul>
+                                </div>
+
+                                <div class="d-flex justify-content-center bottom-btn-wrap">
+                                    <button class="btn btn-cancel" data-dismiss="modal">
+                                        Cancel
+                                    </button>
                                 </div>
 
 
@@ -322,7 +331,7 @@
                             <div class="tab-pane fade" id="v-pills-twitter" role="tabpanel"
                                 aria-labelledby="v-pills-twitter-tab">
                                 <div class="side-action-edit">
-                                    <h4 class="title">Statistics</h4>
+                                    <h4 class="tab-title">Statistics</h4>
                                     <div class="preview-settings">
                                         <div class="vid-info">
                                             <h6 class="vid-title">Wakanda tribute Design</h6>
@@ -333,17 +342,17 @@
                                             <h6 class="size-text">Size: 500x500 px</h6>
                                         </div>
                                         <div class="add-section">
-                                            <ul class="nav preview-stat">
+                                            <ul class="nav stat">
                                                 <li class="nav-item">
-                                                    <span class="flaticon-visibility icons head-icon"></span>
+                                                    <i class="flaticon-visibility icons head-icon"></i>
                                                     View: 20
                                                 </li>
                                                 <li class="nav-item">
-                                                    <span class="flaticon-tap icons head-icon"></span>
+                                                    <i class="flaticon-tap icons head-icon"></i>
                                                     Clicks: 30
                                                 </li>
                                                 <li class="nav-item">
-                                                    <span class="flaticon-statistics icons head-icon"></span>
+                                                    <i class="flaticon-star icons head-icon"></i>
                                                     CTR: 30%
                                                 </li>
                                             </ul>
@@ -353,8 +362,8 @@
                                                 <label for="add-link" class="form-check-label">Add Link</label>
                                             </div>
                                             <div class="form-link">
-                                                <span class="flaticon-link icons link-form-icon"></span>
-                                                <input type="text" name="" id="" class="form-control form-noshadow
+                                                <i class="flaticon-link icons link-form-icon"></i>
+                                                <input type="text" name="" id="" class="form-control no-shadow link-input
                                                 " placeholder="">
                                             </div>
                                             <div class="form-check mb-2">
@@ -362,14 +371,11 @@
                                                     value="true">
                                                 <label for="add-pixel" class="form-check-label">Add Pixels</label>
                                             </div>
-                                            <div class="form-group">
-                                                <select id="my-select" class="form-control form-noshadow" name="">
+                                            <div class="form-group ml-4">
+                                                <select id="my-select" class="form-control no-shadow link-input "
+                                                    name="">
                                                     <option>Facebook</option>
                                                 </select>
-                                            </div>
-                                            <div class="d-flex justify-content-end">
-                                                <button class="btn btn-cancel-sm">Cancel</button>
-                                                <button class="btn btn-apply">Apply</button>
                                             </div>
                                         </div>
                                     </div>
@@ -378,49 +384,37 @@
                                     </h4>
                                     <div class="range-tarriff">
                                         <label for="tarriff-source">My Websit.com</label>
-                                        <input id="tarriff-source" class="form-control-range" type="range" name=""
-                                            min="0" max="100">
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width: 25%" role="progressbar"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
                                         <span class="tarriff-value">100%</span>
                                     </div>
                                     <div class="range-tarriff">
                                         <label for="tarriff-source">My Websit.com</label>
-                                        <input id="tarriff-source" class="form-control-range" type="range" name=""
-                                            min="0" max="100">
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width: 25%" role="progressbar"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
                                         <span class="tarriff-value">100%</span>
                                     </div>
-                                    <div class="range-tarriff">
-                                        <label for="tarriff-source">My Websit.com</label>
-                                        <input id="tarriff-source" class="form-control-range" type="range" name=""
-                                            min="0" max="100">
-                                        <span class="tarriff-value">100%</span>
-                                    </div>
-                                    <div class="range-tarriff">
-                                        <label for="tarriff-source">My Websit.com</label>
-                                        <input id="tarriff-source" class="form-control-range" type="range" name=""
-                                            min="0" max="100">
-                                        <span class="tarriff-value">100%</span>
-                                    </div>
-                                    <div class="range-tarriff">
-                                        <label for="tarriff-source">My Websit.com</label>
-                                        <input id="tarriff-source" class="form-control-range" type="range" name=""
-                                            min="0" max="100">
-                                        <span class="tarriff-value">100%</span>
+                                    <div class="d-flex justify-content-center bottom-btn-wrap">
+                                        <button class="btn btn-cancel" data-dismiss="modal">
+                                            Cancel
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="v-pills-linkedin" role="tabpanel"
                                 aria-labelledby="v-pills-linkedin-tab">
                                 <div class="side-action-download">
-                                    <h4 class="title">Download Methods</h4>
-                                    <p class="desc">
-                                        Choose your prefered format
-                                    </p>
+                                    <h4 class="tab-title">Download Methods</h4>
                                     <nav class="nav nav-fill flex-column pref-download">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">HTML</a>
+                                            <a class="nav-link" href="#">HTML Slide show</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">JPG/JPEG</a>
+                                            <a class="nav-link" href="#">JPG</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="#">PNG</a>
@@ -436,15 +430,60 @@
                                         </li>
                                     </nav>
 
-                                    <div class="d-flex mt-4">
-                                        <button class="btn btn-cancel btn-cancel-download">Cancel</button>
+                                    <div class="d-flex justify-content-center bottom-btn-wrap">
+                                        <button class="btn btn-cancel" data-dismiss="modal">
+                                            Cancel
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="v-pills-google" role="tabpanel"
-                                aria-labelledby="v-pills-google-tab">...</div>
+                                aria-labelledby="v-pills-google-tab">
+                                <div class="side-action-share">
+                                    <h4 class="tab-title">Share</h4>
+                                    <p class="desc">
+                                        Share existing user with graphics
+                                    </p>
+                                    <div class="share-box">
+                                        <input class="form-control no-shadow" type="text" name="" id=""
+                                            placeholder="domain@email.com">
+                                        <button type="button" class="btn btn-share-now">Send</button>
+                                    </div>
+                                    <div class="d-flex justify-content-center bottom-btn-wrap">
+                                        <button class="btn btn-cancel" data-dismiss="modal">
+                                            Cancel
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="tab-pane fade" id="v-pills-custom" role="tabpanel"
-                                aria-labelledby="v-pills-custom-tab">...</div>
+                                aria-labelledby="v-pills-custom-tab">
+                                <div class="side-action-publish">
+                                    <h4 class="tab-title">Publish</h4>
+                                    <nav class="nav publish-options mt-4">
+                                        <a class="nav-link active" href="#">Embed</a>
+                                        <a class="nav-link" href="#">Facebook</a>
+                                        <a class="nav-link" href="#">Twitter</a>
+                                        <a class="nav-link" href="#">Linkedin</a>
+                                        <a class="nav-link" href="#">Reddit</a>
+
+                                    </nav>
+                                    <h4 class="sub-title">
+                                        Embed code
+                                    </h4>
+                                    <div class="url-box">
+                                        <input readonly="" class="form-control no-shadow" type="text" name="" id=""
+                                            value="<scriptid=“clbnjss_w” type=“text/javascript”>clbnjss=“">
+                                        <i class="flaticon-copy icons copy-url-icon"></i>
+                                    </div>
+
+                                    <div class="d-flex justify-content-center bottom-btn-wrap">
+                                        <button class="btn btn-cancel" data-dismiss="modal">
+                                            Cancel
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

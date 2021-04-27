@@ -276,6 +276,9 @@
 
 .profile-option .bottom-section {
     padding: 1rem 0;
+    background-color: #fff;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
 }
 
 .bottom-section .nav-item {
@@ -363,6 +366,7 @@
 .upload-wrap {
     display: flex;
     margin-right: 1.2rem;
+    align-items: center;
 }
 
 .upload-wrap .upload-btn {
@@ -552,19 +556,27 @@
     background-color: #01a6ab;
 }
 
+.left-section .chat-img {
+    max-width: 100%;
+    width: 20rem;
+    margin: 4rem 0 2rem 0;
+}
+
 .modal-inner .right-section {
     width: 50%;
     min-height: 70vh;
     padding: 3rem 3rem 3rem 2.5rem;
 }
 
-.add-team-form .title {
+.add-team-form .title,
+.workspace-form .title {
     font-size: 0.6rem;
     color: #707070;
     margin-bottom: 1rem;
 }
 
-.add-team-form .form-control {
+.add-team-form .form-control,
+.workspace-form .form-control {
     background-color: #f5f5f5;
     font-size: 0.8rem;
     height: calc(1.5em + .75rem + 15px);
@@ -649,11 +661,13 @@
     color: #ff0000;
 }
 
-#add-pixel-modal .left-section, #show-info-modal .left-section {
+#add-pixel-modal .left-section,
+#show-info-modal .left-section {
     width: 40%;
 }
 
-#add-pixel-modal .right-section, #show-info-modal .right-section {
+#add-pixel-modal .right-section,
+#show-info-modal .right-section {
     width: 60%;
 }
 
@@ -931,4 +945,531 @@
 .saved-project-box .info-icn::before {
     color: #a2411a;
     font-size: 1.5rem;
+}
+
+.test-preview iframe {
+    width: 100%;
+    border: none;
+    height: 215px;
+    border-radius: 0.9rem;
+}
+
+.preview-stat {
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    padding: 0 2rem;
+}
+
+.preview-stat .nav-item {
+    font-size: 0.7rem;
+    color: #6a6a6a;
+    display: flex;
+    align-items: center;
+}
+
+.preview-stat .nav-item i::before {
+    font-size: 1.3rem;
+    margin-right: 0.5rem;
+}
+
+.preview-action .nav-item {
+    margin-right: 1rem;
+}
+
+.preview-action .nav-link {
+    color: #000;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.preview-action .nav-link i::before {
+    margin-right: 0.5rem;
+}
+
+#show-info-modal .bottom-btn-wrap {
+    margin-top: 2rem;
+}
+
+.preview-settings {
+    display: flex;
+}
+
+.preview-settings .vid-info {
+    margin-right: 2rem;
+}
+
+.preview-settings .vid-info .vid-title {
+    font-size: 0.6rem;
+}
+
+.preview-settings .vid-info .vid iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+}
+
+.preview-settings .vid-info .vid {
+    width: 170px;
+    height: 150px;
+
+}
+
+.preview-settings .vid-info .size-text {
+    font-size: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.add-section .stat {
+    justify-content: space-between;
+    border-bottom: 1px solid #838383;
+    padding: 0 0 0.4rem 0.6rem;
+}
+
+.add-section .stat .nav-item {
+    font-size: 0.6rem;
+    color: #838383;
+    display: flex;
+    align-items: center;
+}
+
+.add-section .stat .nav-item i::before {
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+}
+
+.add-section .form-check {
+    font-size: 0.6rem;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.add-section .form-check-input {
+    margin-top: -0.1rem;
+    transform: scale(0.7);
+}
+
+.form-link {
+    display: flex;
+    align-items: center;
+}
+
+.form-link i::before {
+    margin-right: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.link-input {
+    background-color: #fafafa;
+    height: calc(1.5em + .75rem + -9px);
+    border: none;
+    /* font-size: 0.7rem; */
+}
+
+.sub-title {
+    font-size: 0.7rem;
+    border-bottom: 2px solid #bbbbbb;
+    padding-bottom: 0.3rem;
+    margin: 2rem 0;
+    color: #bbbbbb;
+}
+
+.range-tarriff {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.range-tarriff label {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+    margin-right: 3rem;
+}
+
+.range-tarriff .progress {
+    flex-grow: 1;
+    height: 0.4rem;
+    background-color: #073941;
+    margin-right: 0.5rem;
+    overflow: visible;
+}
+
+.range-tarriff .progress .progress-bar {
+    background-color: #01a6ab;
+    position: relative;
+    overflow: visible;
+}
+
+.range-tarriff .progress .progress-bar::after {
+    content: "";
+    background-color: #01a6ab;
+    position: absolute;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    left: 100%;
+}
+
+.range-tarriff .tarriff-value {
+    font-size: 0.9rem;
+}
+
+.pref-download {
+    margin-top: 1.2rem;
+}
+
+.pref-download .nav-link {
+    font-size: 0.7rem;
+    padding: 0.9rem 1rem;
+    border-radius: 0.3rem;
+}
+
+.pref-download .nav-item {
+    margin-bottom: 0.5rem;
+}
+
+.pref-download .nav-item:nth-child(1) .nav-link {
+    background-color: #3bbabe;
+    color: #fff;
+}
+
+.pref-download .nav-item:nth-child(2) .nav-link {
+    background-color: #ede4ff;
+    color: #395e6a;
+}
+
+.pref-download .nav-item:nth-child(3) .nav-link {
+    background-color: #d1e4ff;
+    color: #395e6a;
+}
+
+.pref-download .nav-item:nth-child(4) .nav-link {
+    background-color: #ffe8df;
+    color: #395e6a;
+}
+
+.pref-download .nav-item:nth-child(5) .nav-link {
+    background-color: #ede4ff;
+    color: #395e6a;
+}
+
+.pref-download .nav-item:nth-child(6) .nav-link {
+    background-color: #d1e4ff;
+    color: #395e6a;
+}
+
+
+.side-action-share .desc {
+    font-size: 0.8rem;
+}
+
+.share-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #f4f4f4;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+}
+
+.share-box input {
+    border: none;
+    background-color: transparent;
+    font-size: 0.8rem;
+}
+
+.share-box .btn-share-now {
+    background-color: #01a6ab;
+    color: #fff;
+    padding: 0.2rem 1.5rem;
+}
+
+.side-action-share .bottom-btn-wrap {
+    margin-top: 15rem !important;
+}
+
+.publish-options .nav-link {
+    font-size: 0.8rem;
+    color: #8c8498;
+    flex-grow: 1;
+    text-align: center;
+    border-radius: 0.3rem;
+}
+
+.publish-options .nav-link.active {
+    background-color: #afe3e5;
+    color: #216364;
+}
+
+.url-box {
+    display: flex;
+    align-items: center;
+    background-color: #f6fbfb;
+    border-radius: 0.3rem;
+    padding: 0.3rem 0.7rem;
+
+}
+
+.url-box input {
+    background-color: transparent !important;
+    border: none;
+    font-size: 0.8rem;
+}
+
+.side-action-publish .bottom-btn-wrap {
+    margin-top: 7rem !important;
+}
+
+.navmenu {
+    padding: 0.7rem 1rem;
+    background-color: #f8fbfe;
+    width: 100%;
+}
+
+.navmenu .navbar-brand {
+    margin-right: 5rem;
+}
+
+.navmenu .nav-right-section {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.navmenu .nav-link {
+    display: flex;
+    position: relative;
+    align-items: center;
+    font-size: 0.9rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    color: #01a6ab;
+    padding: 0;
+}
+
+.navmenu .nav-link i::before {
+    font-size: 1.2rem;
+}
+
+.drop-user-icon::before {
+    font-size: 0.7rem !important;
+    margin-left: 0.2rem;
+}
+
+.profile-btn {
+    position: relative;
+}
+
+.navmenu .profile-option {
+    right: 0;
+    width: 268px;
+    bottom: -293px;
+}
+
+.bg-workspace-body {
+    background-color: #f9fdfc;
+    min-height: 100vh;
+}
+
+.workspace-main-title {
+    color: #073941;
+    font-size: 1.9rem;
+    margin-bottom: 2rem;
+}
+
+.workspaces-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.workspace-empty {
+    color: #4d4d4d;
+    margin-left: 6rem;
+    display: flex;
+    align-items: center;
+}
+
+.workspace-empty i::before {
+    font-size: 1.1rem;
+    margin-right: 1rem;
+}
+
+.workspace-box {
+    border-radius: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1.3rem 1rem 1rem 1rem;
+    min-height: 240px;
+    background-color: #ccedee;
+    min-width: 215px;
+    max-width: 215px;
+    margin-bottom: 1rem;
+    border: 2px solid #3ababd;
+    cursor: pointer;
+    max-height: 240px;
+}
+
+.workspace-box .workspace-logo {
+    width: 2.5rem;
+}
+
+.workspace-box .workspace-name {
+    margin-top: 0.7rem;
+    font-weight: bold;
+}
+
+.workspace-box .default-text {
+    background-color: #a3dfe1;
+    color: #42b7ba;
+    display: inline-block;
+    font-size: 0.6rem;
+    padding: 0.2rem 1.5rem;
+    border-radius: 1.4rem;
+    margin-top: 0.4rem;
+}
+
+.workspace-box .bottom-info {
+    margin-top: auto;
+    display: flex;
+}
+
+.workspace-box .status {
+    font-size: 0.7rem;
+}
+
+.workspace-box .date-created {
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+}
+
+.workspace-box .workspace-toolbar {
+    align-self: flex-end;
+}
+
+.workspace-action .nav-link {
+    padding: 0;
+    font-size: 0.7rem;
+    color: #01a6ab;
+}
+
+.workspace-action .nav-item {
+    margin-right: 0.3rem;
+}
+
+.workspace-box .workspace-details {
+    flex-grow: 1;
+    margin-right: 1rem;
+}
+
+.workspace-form .form-control {
+    background-color: #f2fbf9;
+    font-size: 0.7rem;
+    border-radius: 0.8rem;
+}
+
+.workspace-form .upload-wrap .upload-btn {
+    display: flex;
+    font-size: 0.8rem;
+    align-items: center;
+    background-color: #a8d4d7;
+    padding: 0.4rem 1.4rem 0.4rem 0.4rem;
+    border-radius: 1.5rem;
+    margin-right: 1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.workspace-form .upload-btn .icon-wrap {
+    background-color: #d3e9eb;
+    width: 1.4rem;
+    height: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 1rem;
+    transform: none;
+}
+
+.workspace-form .upload-btn .icon-wrap .upload-icon::before {
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: #01a6ab;
+}
+
+.workspace-form .upload-wrap .btn-cancel-upload {
+    background-color: #fcc9c9;
+    border-radius: 50%;
+    padding: 0.3rem 0.5rem;
+    display: flex;
+}
+
+.workspace-form .btn-cancel-upload .cancel-icon {
+    color: red;
+    font-size: 0.6rem;
+}
+
+.workspace-form .upload-btn .text {
+    color: #0a0d0d;
+    margin-right: 0.8rem;
+    font-size: 0.7rem;
+}
+
+.workspace-form .btn {
+    font-size: 0.8rem;
+    padding: .375rem 0.95rem;
+}
+
+.workspace-form .btn-create {
+    background-color: #01a6ab;
+    color: #ffff;
+}
+
+.workspace-form .btn-close {
+    color: #18abb2;
+}
+
+.modal-info {
+    margin-top: auto;
+    font-size: 0.5rem;
+}
+
+#add-workspace-modal .modal-inner .right-section,
+#add-workspace-modal .modal-inner .left-section {
+    min-height: 75vh;
+}
+
+.art-section {
+    height: 100vh;
+    width: 55%;
+    background-image: url('../Login/login\ art.svg');
+    background-color: #f6fcfb;
+    background-repeat: no-repeat;
+    background-size: 530px;
+    background-position: 28px 196%;
+    padding: 2.5rem 4rem;
+}
+
+.form-section {
+    height: 100vh;
+    width: 45%;
+    display: flex;
+    align-items: center;
+}
+
+.art-section .logo-login {
+    width: 9rem;
+    margin-bottom: 2rem;
+}
+
+.art-section .desc {
+    color: #2c5a5a;
+    font-weight: bolder;
+    font-size: 2.2rem;
+}
+
+.art-section .desc span {
+    color: #01a6ab;
 }
