@@ -1448,7 +1448,7 @@
     background-color: #f6fcfb;
     background-repeat: no-repeat;
     background-size: 530px;
-    background-position: 28px 196%;
+    background-position: 28px 165%;
     padding: 2.5rem 4rem;
 }
 
@@ -1457,6 +1457,8 @@
     width: 45%;
     display: flex;
     align-items: center;
+    padding: 6rem 4rem 2rem 3rem;
+    flex-direction: column;
 }
 
 .art-section .logo-login {
@@ -1472,4 +1474,61 @@
 
 .art-section .desc span {
     color: #01a6ab;
+}
+
+.login-form-wrap {
+    min-width: 330px;
+}
+
+.login-form-wrap .title {
+    font-size: 1.8rem;
+    color: #073941;
+    font-weight: bold;
+}
+
+.login-form-wrap .desc {
+    color: #817d81;
+    font-size: 0.7rem;
+    margin-bottom: 2rem;
+}
+
+.login-form-wrap label {
+    font-size: 0.8rem;
+    color: #707070;
+}
+
+.login-form-wrap .input-signin {
+    font-size: 0.8rem;
+    height: calc(1.5em + .75rem + 11px);
+    border: 1px solid #01a6ab;
+}
+
+.forgot-pwd .nav-link {
+    padding: 0;
+    color: #7d7470;
+    font-size: 0.9rem;
+}
+
+.btn-login {
+    background-color: #01a6ab;
+    color: #ffffff;
+    font-size: 0.9rem;
+    margin: 1.5rem 0;
+    padding: 0.75rem 0.75rem;
+}
+
+.text-more-info {
+    text-align: center;
+    color: #7d7470;
+    font-size: 0.9rem;
+}
+
+.text-more-info a {
+    color: inherit;
+}
+
+.copy-right {
+    margin-top: auto;
+    font-size: 0.7rem;
+    color: #7d7470;
 }
