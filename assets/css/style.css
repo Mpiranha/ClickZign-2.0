@@ -1448,7 +1448,7 @@
     background-color: #f6fcfb;
     background-repeat: no-repeat;
     background-size: 530px;
-    background-position: 28px 165%;
+    background-position: 28px calc(100% + 100px);
     padding: 2.5rem 4rem;
 }
 
@@ -1457,7 +1457,7 @@
     width: 45%;
     display: flex;
     align-items: center;
-    padding: 6rem 4rem 2rem 3rem;
+    padding: 0 4rem 2rem 3rem;
     flex-direction: column;
 }
 
@@ -1478,6 +1478,10 @@
 
 .login-form-wrap {
     min-width: 330px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .login-form-wrap .title {
