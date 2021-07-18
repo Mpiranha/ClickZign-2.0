@@ -1541,7 +1541,7 @@
 
 .btn-suggest {
     background-color: #c8b8e8;
-    color: #ffffff;
+    color: #50348a;
     font-size: 0.8rem;
     border-radius: 2rem;
     padding: 0.3rem .75rem;
@@ -1564,6 +1564,10 @@
     font-size: 0.9rem;
 }
 
+#feed-modal .modal-content {
+    border-radius: 1rem;
+}
+
 .btn-new-updates {
     font-size: 1rem;
     text-decoration: none;
@@ -1580,7 +1584,7 @@
 }
 
 .btn-submit-feature {
-    color: #ffffff;
+    color: #50348a;
     background-color: #c8b8e8;
     font-size: 0.9rem;
     border-radius: 2rem;
